@@ -1,3 +1,5 @@
 dependencies {
 	compile project(":explorviz-backend-core")
+	
+	compile group: 'de.sven-jacobs', name: 'loremipsum', version: '1.0'
 }
