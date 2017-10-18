@@ -13,7 +13,7 @@ public class DummyResource {
 	public String show() {
 		
 		// Note the dependency in the respective build.gradle
-		LoremIpsum loremIpsum = new LoremIpsum();
+		final LoremIpsum loremIpsum = new LoremIpsum();
 		
 		return "Hi from dummy extension: " + loremIpsum.getParagraphs(1);
 	}
