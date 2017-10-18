@@ -1,4 +1,4 @@
-package net.explorviz.extension.dummy;
+package net.explorviz.extension.dummy.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

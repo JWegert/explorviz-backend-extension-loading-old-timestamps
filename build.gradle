@@ -1,5 +1,7 @@
 dependencies {
+	// Access and use core logic
 	compile project(":explorviz-backend-core")
 	
+	// Dependency for this subproject. Add your dependencies in the same way.
 	compile group: 'de.sven-jacobs', name: 'loremipsum', version: '1.0'
 }
