@@ -1,7 +1,12 @@
+# Gradle output and temp files
+build
+.gradle
+
+# Eclipse files (created with 'gradlew eclipse')
 bin
 .classpath
 .project
 .settings
 
-build
+# Mac Finder file
 .DS_Store
