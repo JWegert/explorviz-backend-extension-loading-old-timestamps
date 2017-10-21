@@ -12,8 +12,18 @@ public class SetupListener implements ServletContextListener {
 
 		System.out.println("Hello from dummy extension setup listener.");
 
-		// Start necessary logic of your extension here. Be aware of the undefined
-		// execution order of the @Weblistener annotation.
+		/*
+		 * Register your model classes as shown below. The ResourceConverter is used for
+		 * (de)serializing all registered and annotated (!) classes to JSON-API-conform
+		 * JSON text.
+		 */
+
+		// ResourceConverterFactory.classes.add(MyModelClass.class);
+
+		/*
+		 * Start necessary logic of your extension here. Be aware of the
+		 * nondeterministic execution order of the @Weblistener annotation.
+		 */
 
 	}
 
