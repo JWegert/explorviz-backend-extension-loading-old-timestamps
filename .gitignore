@@ -6,7 +6,6 @@ build
 bin
 .classpath
 .project
-.settings
 
 # Mac Finder file
 .DS_Store

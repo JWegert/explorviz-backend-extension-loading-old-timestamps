@@ -1,0 +1,4 @@
+rootProject.name = 'explorviz-backend-extension-dummy'
+
+include ':explorviz-backend'
+project(':explorviz-backend').projectDir = new File('/Users/alexanderkrause/Documents/Git/ExplorViz/explorviz-backend')
