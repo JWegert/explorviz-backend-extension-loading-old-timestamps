@@ -1,5 +1,6 @@
 # Eclipse
-.settings
+.settings/*
+!.settings/edu.umd.cs.findbugs.core.prefs
 
 # Gradle output and temp files
 build
@@ -8,7 +9,6 @@ build
 # Eclipse files (created with 'gradlew eclipse')
 bin
 .classpath
-.project
 
 # Mac Finder file
 .DS_Store
