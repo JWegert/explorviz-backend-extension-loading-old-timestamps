@@ -1,3 +1,6 @@
+# Eclipse
+.settings
+
 # Gradle output and temp files
 build
 .gradle
