@@ -9,6 +9,7 @@ build
 # Eclipse files (created with 'gradlew eclipse')
 bin
 .classpath
+.project
 
 # Mac Finder file
 .DS_Store
