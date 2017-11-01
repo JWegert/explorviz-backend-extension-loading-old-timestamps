@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
   	// Core logic
-  	compile 'com.github.ExplorViz:explorviz-backend:5355d39'
+  	compile 'com.github.ExplorViz:explorviz-backend:master-SNAPSHOT'
   
  	// Dependency for this subproject. Add your dependencies in the same way.
   	compile group: 'de.sven-jacobs', name: 'loremipsum', version: '1.0'
