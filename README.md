@@ -8,7 +8,7 @@ This repository holds a dummy extension for [ExplorViz Backend](https://github.c
 3. Move the content of the unzipped folder to your cloned repository. Copy the (most of the time) invisible *.gitignore* file as well!
 4. In Eclipse: *Import -> Gradle -> Existing Gradle Project*
 5. In Eclipse: Rename *dummy* in...
-- *settings.gradle
+- *settings.gradle*
 - *src/main/java/net/explorviz/extension* (Right click -> Refactor -> Rename)
 6. Start with Gradle task *gretty -> appStart*
 
