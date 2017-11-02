@@ -21,13 +21,18 @@ repositories {
   maven { url 'https://jitpack.io' }
 }
 
+configurations {
+	provided
+	compile.extendsFrom(provided)
+}
+
 
 dependencies {
   	// Core logic
   	compile 'com.github.ExplorViz:explorviz-backend:master-SNAPSHOT'
   
  	// Dependency for this subproject. Add your dependencies in the same way.
-  	compile group: 'de.sven-jacobs', name: 'loremipsum', version: '1.0'
+  	provided group: 'de.sven-jacobs', name: 'loremipsum', version: '1.0'
 
     testCompile 'junit:junit:4.12'
 }
@@ -35,6 +40,16 @@ dependencies {
 
 // Don't build war when tests fail
 war.dependsOn check
+
+
+// War plugin typically disables jar build
+assemble.dependsOn jar
+
+// Build .jar file with your "provided" dependencies only
+jar {
+  baseName = project.name 
+  from configurations.provided.asFileTree.files.collect { zipTree(it) }
+}
 
 
 // Tooling
