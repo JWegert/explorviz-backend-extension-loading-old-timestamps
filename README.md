@@ -14,16 +14,17 @@ This procedure will save the configs of *Checkstyle, Findbugs, PMD* and the *Ecl
 
 1. Clone this repository
 2. Set remote URL to the URL of your assigned repository (e.g. for SSH `git remote set-url origin git@github.com:ExplorViz/explorviz-backend-extension-X.git`)
-3. Rename the string *dummy* to your extension name X in 
+3. Rename the string *dummy* to your extension name X in
 - Root folder name
 - settings.gradle
 - .project (invisible file, dependent on your OS settings)
-4. Stage and commit changes with `git commit -am "renaming dummy"`
-5. Push to remote origin and set upstream with `git push -u origin master`
-6. Follow the [Eclipse Setup](https://github.com/ExplorViz/explorviz-backend-extension-dummy#eclipse-setup)
-7. In Eclipse: *Import -> Gradle -> Existing Gradle Project*
-8. Start your development
-9. Start the embedded web server with Gradle task *gretty -> appStart*
+4. Adjust the README.md (e.g. remove Setup sections)
+5. Stage and commit changes with `git commit -am "renaming dummy"`
+6. Push to remote origin and set upstream with `git push -u origin master`
+7. Follow the [Eclipse Setup](https://github.com/ExplorViz/explorviz-backend-extension-dummy#eclipse-setup)
+8. In Eclipse: *Import -> Gradle -> Existing Gradle Project*
+9. Start your development
+10. Start the embedded web server with Gradle task *gretty -> appStart*
 
 ## Setup Development / Usage (Old procedure)
 1. Download this repository and unpack the .zip file
