@@ -5,9 +5,9 @@ This repository holds a dummy extension for [ExplorViz Backend](https://github.c
 ### Eclipse Setup
 1. Download the latest **Eclipse IDE for Java and DSL Developers** and Java SDK 8
 2. *Start Eclipse -> Help -> Eclipse Marketplace*, insert and download
-- *eclipse-pmd 1.10*
 - *SpotBugs Eclipse plugin 3.1.0*
 - *Checkstyle Plug-in 8.0.0*
+3. In Eclipse: *Help -> Install New Software -> Insert https://dl.bintray.com/pmd/pmd-eclipse-plugin/updates/ in "Work with" -> Check "PMD for Eclipse 4" -> Finish and download* (**Attention:** Don't use the eclipse-pmd version from the marketplace)
 
 ## Setup Development / Usage
 This procedure will save the configs of *Checkstyle, Findbugs, PMD* and the *Eclipse Save Action*. Please use the following steps to set up your development.
