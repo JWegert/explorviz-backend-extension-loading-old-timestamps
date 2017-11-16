@@ -33,6 +33,9 @@ public class Application extends ResourceConfig {
 		// register DI
 		register(dependencyBinder);
 
+		// Enable CORS
+		register(CORSResponseFilter.class);
+
 		// register all providers in the given package
 		register(DummyModelProvider.class);
 
