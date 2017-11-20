@@ -9,6 +9,9 @@ import de.svenjacobs.loremipsum.LoremIpsum;
 import net.explorviz.extension.dummy.model.DummyModel;
 import net.explorviz.extension.dummy.model.SubDummyModel;
 
+// @Secured
+// Add the "Secured" annotation to enable authentication
+
 @Path("/test")
 public class TestResource {
 

@@ -12,23 +12,20 @@ import net.explorviz.extension.dummy.model.DummyModel;
 import net.explorviz.extension.dummy.model.SubDummyModel;
 import net.explorviz.extension.dummy.providers.DummyModelProvider;
 import net.explorviz.injection.ResourceConverterFactory;
-import net.explorviz.server.main.DependencyInjectionBinder;
 
 @ApplicationPath("/extension/dummy")
 public class Application extends ResourceConfig {
 
 	public Application() {
 
-		final AbstractBinder dependencyBinder = new DependencyInjectionBinder();
-
+		// register the models that you wan't to parse to JSONAPI-conform JSON,
+		// i.e. exchange with frontend
 		final ResourceConverterFactory factory = new ResourceConverterFactory();
 		factory.registerClass(DummyModel.class);
 		factory.registerClass(SubDummyModel.class);
 
+		final AbstractBinder dependencyBinder = new ExtensionDependencyInjectionBinder();
 		dependencyBinder.bindFactory(factory).to(ResourceConverter.class).in(Singleton.class);
-
-		// bind your possible injections here
-		// dependencyBinder.bind(X.class).to(Y.class).in(Singleton.class);
 
 		// register DI
 		register(dependencyBinder);
