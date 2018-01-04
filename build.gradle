@@ -19,8 +19,17 @@ buildscript {
 repositories {
   jcenter()
   maven { url 'https://jitpack.io' }
+  
+  // used for kieker and teetime snapshots
   maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
+
+
+// # Uncomment lines below to force dependency downloading (e.g. when explorviz-backend was updated)
+//configurations.all {
+//    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+//}
+
 
 configurations {
 	provided
